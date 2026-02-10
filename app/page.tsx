@@ -44,39 +44,94 @@ export default function Home() {
 
 
         {/* ================= Hero ================= */}
-        <section className="border-b border-zinc-200">
-          <div className="mx-auto max-w-6xl px-5 py-24">
+        <section className="relative overflow-hidden border-b border-zinc-200">
+  {/* background */}
+  <div className="pointer-events-none absolute inset-0 hero-shimmer bg-[radial-gradient(60%_40%_at_20%_10%,rgba(180,150,90,0.12),transparent_60%),radial-gradient(50%_40%_at_85%_0%,rgba(0,0,0,0.05),transparent_60%),linear-gradient(to_bottom,white,rgba(250,250,250,0.95))]" />
+  <div className="relative mx-auto max-w-6xl px-5 py-16 md:py-24">
+    <div className="grid gap-10 md:grid-cols-2 md:items-center">
+      {/* left */}
+      <div className="reveal">
+        <div className="text-xs tracking-[0.28em] text-zinc-500">
+          KABUSHIKI KAISHA MIKARE
+        </div>
+        <div className="mt-4 gold-hairline w-24" />
 
-            <h1 className="text-3xl font-semibold leading-[1.2] tracking-tight md:text-5xl">
-  <span className="block">ブランドと価値を創造する。</span>
+        <h1 className="mt-8 text-3xl font-semibold leading-[1.2] tracking-tight md:text-5xl">
+          <span className="block">ブランドと価値を創造する。</span>
 
-  <span className="mt-3 block">
-    <span className="block sm:inline">人と暮らしに、</span>
-    <span className="block sm:inline sm:ml-2">長く愛されるものを。</span>
-  </span>
-</h1>
+          <span className="mt-3 block">
+            <span className="block sm:inline">人と暮らしに、</span>
+            <span className="block sm:inline sm:ml-2">長く愛されるものを。</span>
+          </span>
+        </h1>
 
+        <p className="reveal reveal-delay-1 mt-8 max-w-2xl leading-relaxed text-zinc-600">
+          株式会社ミカレは、ライフスタイル領域におけるブランド開発および事業創造を行う企業です。
+        </p>
 
-            <p className="mt-8 max-w-2xl text-zinc-600 leading-relaxed">
-              株式会社ミカレは、ライフスタイル領域におけるブランド開発および事業創造を行う企業です。
-            </p>
+        <div className="reveal reveal-delay-2 mt-10 flex flex-wrap gap-3">
+          <a
+            href="#contact"
+            className="group inline-flex items-center justify-center rounded-full bg-zinc-900 px-6 py-3 text-sm font-medium text-white transition hover:bg-zinc-800"
+          >
+            お問い合わせ
+            <span className="ml-2 inline-block transition group-hover:translate-x-0.5">
+              →
+            </span>
+          </a>
 
-            <div className="mt-10">
-              <a
-                href="#contact"
-                className="rounded-full bg-zinc-900 px-6 py-3 text-sm text-white hover:bg-zinc-800"
-              >
-                お問い合わせ
-              </a>
+          <a
+            href="#about"
+            className="inline-flex items-center justify-center rounded-full border border-zinc-300 bg-white/70 px-6 py-3 text-sm font-medium text-zinc-800 transition hover:border-zinc-400 hover:bg-white"
+          >
+            会社概要を見る
+          </a>
+        </div>
+
+        <div className="reveal reveal-delay-3 mt-10 flex flex-wrap gap-3 text-xs text-zinc-500">
+          <span className="rounded-full border border-zinc-300 bg-white/70 px-3 py-1">
+            アクセサリー・ジュエリー
+          </span>
+          <span className="rounded-full border border-zinc-300 bg-white/70 px-3 py-1">
+            ブランド戦略・マーケティング支援
+          </span>
+          <span className="rounded-full border border-zinc-300 bg-white/70 px-3 py-1">
+            ペット関連事業
+          </span>
+        </div>
+      </div>
+
+      {/* right */}
+      <div className="reveal reveal-delay-2">
+        <div className="rounded-3xl border border-zinc-200 bg-white/80 p-7 shadow-[0_20px_60px_rgba(0,0,0,0.06)] backdrop-blur">
+          <div className="text-sm font-semibold text-zinc-800">Overview</div>
+
+          <div className="mt-5 space-y-4 text-sm text-zinc-600">
+            <div className="flex items-start justify-between gap-6 border-b border-zinc-200 pb-4">
+              <span className="text-zinc-500">中核事業</span>
+              <span className="text-zinc-900">アクセサリー・ジュエリー</span>
             </div>
 
-            <div className="mt-10 flex flex-wrap gap-3 text-xs text-zinc-500">
-              <span className="border px-3 py-1 rounded-full">アクセサリー・ジュエリー</span>
-              <span className="border px-3 py-1 rounded-full">ブランド戦略・マーケティング支援</span>
-              <span className="border px-3 py-1 rounded-full">ペット関連事業</span>
+            <div className="flex items-start justify-between gap-6 border-b border-zinc-200 pb-4">
+              <span className="text-zinc-500">支援領域</span>
+              <span className="text-zinc-900">ブランド戦略・マーケティング</span>
+            </div>
+
+            <div className="flex items-start justify-between gap-6">
+              <span className="text-zinc-500">重点領域</span>
+              <span className="text-zinc-900">ライフスタイル</span>
             </div>
           </div>
-        </section>
+
+          <div className="mt-6 rounded-2xl border border-zinc-200 bg-white p-4 text-xs text-zinc-500">
+            本サイトは法人審査・お取引のための会社情報を中心に掲載しています。
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 
         {/* ================= About ================= */}
