@@ -57,15 +57,17 @@ export default function Home() {
         <div className="mt-4 gold-hairline w-24" />
 
         <h1 className="mt-8 font-semibold tracking-tight leading-[1.15] text-[clamp(2.0rem,5.2vw,3.6rem)]">
+  {/* 第一行：永远整体 */}
   <span className="block whitespace-nowrap break-keep">
     ブランドと価値を創造する。
   </span>
 
-  <span className="mt-4 block text-balance">
-    <span className="block sm:inline">人と暮らしに、</span>
-    <span className="block sm:inline sm:ml-2">長く愛されるものを。</span>
+  {/* 第二行：整句作为一个块，不再拆词 */}
+  <span className="mt-4 block whitespace-nowrap break-keep text-balance">
+    人と暮らしに、長く愛されるものを。
   </span>
 </h1>
+
 
 
         <p className="reveal reveal-delay-1 mt-8 max-w-2xl leading-relaxed text-zinc-600">
