@@ -56,14 +56,17 @@ export default function Home() {
         </div>
         <div className="mt-4 gold-hairline w-24" />
 
-        <h1 className="mt-8 text-3xl font-semibold leading-[1.2] tracking-tight md:text-5xl">
-          <span className="block">ブランドと価値を創造する。</span>
+        <h1 className="mt-8 font-semibold tracking-tight leading-[1.15] text-[clamp(2.0rem,5.2vw,3.6rem)]">
+  <span className="block whitespace-nowrap break-keep">
+    ブランドと価値を創造する。
+  </span>
 
-          <span className="mt-3 block">
-            <span className="block sm:inline">人と暮らしに、</span>
-            <span className="block sm:inline sm:ml-2">長く愛されるものを。</span>
-          </span>
-        </h1>
+  <span className="mt-4 block text-balance">
+    <span className="block sm:inline">人と暮らしに、</span>
+    <span className="block sm:inline sm:ml-2">長く愛されるものを。</span>
+  </span>
+</h1>
+
 
         <p className="reveal reveal-delay-1 mt-8 max-w-2xl leading-relaxed text-zinc-600">
           株式会社ミカレは、ライフスタイル領域におけるブランド開発および事業創造を行う企業です。
