@@ -106,16 +106,7 @@ export default function Home() {
         </div>
       </div>
 
-      {/* right */}
-      <div className="reveal reveal-delay-2">
-        <div className="rounded-3xl border border-zinc-200 bg-white/80 p-7 shadow-[0_20px_60px_rgba(0,0,0,0.06)] backdrop-blur">
-          <div className="text-sm font-semibold text-zinc-800">Overview</div>
-
-          <div className="mt-5 space-y-4 text-sm text-zinc-600">
-            <div className="flex items-start justify-between gap-6 border-b border-zinc-200 pb-4">
-              <span className="text-zinc-500">中核事業</span>
-              <span className="text-zinc-900">アクセサリー・ジュエリー</span>
-            </div>
+      
 
             <div className="flex items-start justify-between gap-6 border-b border-zinc-200 pb-4">
               <span className="text-zinc-500">支援領域</span>
